@@ -94,7 +94,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2026-03-05T03:57:07.000Z">
-<meta property="article:modified_time" content="2026-03-06T08:03:44.763Z">
+<meta property="article:modified_time" content="2026-03-06T09:25:43.807Z">
 <meta property="article:author" content="邓氏鱼">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -526,8 +526,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-03-06 16:03:44</span>
-            <span class="mobile">2026-03-06 16:03:44</span>
+            <span class="desktop">2026-03-06 17:25:43</span>
+            <span class="mobile">2026-03-06 17:25:43</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -565,7 +565,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>399 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>407 字</span>
         </span>
     
     
@@ -595,7 +595,7 @@ mjx-container[display="true"] + br {
 <p>安装主题,我选的是 <a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs">redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
 <div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-redefine --save</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="2-初始化和配置出题"><a href="#2-初始化和配置出题" class="headerlink" title="2. 初始化和配置出题"></a>2. 初始化和配置出题</h2><p>找到一个空文件夹,初始化hexo</p>
+<h2 id="2-初始化和配置主题"><a href="#2-初始化和配置主题" class="headerlink" title="2. 初始化和配置主题"></a>2. 初始化和配置主题</h2><p>找到一个空文件夹,初始化hexo</p>
 <div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></div>
 
 <p>修改<code>_config.yml</code>中的<code>theme</code>为<code>redefine</code>,并新建1个文件<code>_config.redefine.yml</code>，参考<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs/basic">redefine文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置</p>
@@ -615,8 +615,8 @@ mjx-container[display="true"] + br {
 <div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
 
 <p>在github pages 中,查看部署状态<br><img lazyload="" src="/images/loading.svg" data-src="https://image.yyyyyd.com.cn/images/hexo-blog/20260305222745799.png"></p>
-<h2 id="4-配置LaTeX-渲染"><a href="#4-配置LaTeX-渲染" class="headerlink" title="4. 配置LaTeX 渲染"></a>4. 配置LaTeX 渲染</h2><p>参考<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs/plugins/mathjax">redefine文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h2 id="5-配置域名"><a href="#5-配置域名" class="headerlink" title="5. 配置域名"></a>5. 配置域名</h2><p>自行购买域名，我购买的是<code>yyyyyd.com.cn</code>，DNS服务器使用的Cloudflare,在Cloudflare 中配置域名解析,将<code>yyyyyd.com.cn</code>指向github pages 仓库的IP地址，增加两条CNAME记录</p>
+<h2 id="4-详细博客配置"><a href="#4-详细博客配置" class="headerlink" title="4. 详细博客配置"></a>4. 详细博客配置</h2><p>我配置了基本信息、Tag、MathJax 渲染LaTeX 公式、评论系统，<br>参考<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs/plugins/mathjax">redefine文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h2 id="5-配置域名"><a href="#5-配置域名" class="headerlink" title="5. 配置域名"></a>5. 配置域名</h2><p>自行购买域名，我购买的是<code>yyyyyd.com.cn</code>，DNS服务器使用的Cloudflare,在Cloudflare 中配置域名解析,将<code>yyyyyd.com.cn</code>指向github pages 仓库的IP地址，增加一条CNAME记录</p>
 <table>
 <thead>
 <tr>
@@ -630,15 +630,10 @@ mjx-container[display="true"] + br {
 <td>yyyyyd.com.cn</td>
 <td>username.github.io</td>
 </tr>
-<tr>
-<td>CNAME</td>
-<td><a class="link" target="_blank" rel="noopener" href="http://www.yyyyyyd.com.cn/">www.yyyyyyd.com.cn<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></td>
-<td>username.github.io</td>
-</tr>
 </tbody></table>
 <p>github仓库会产生一个CNAME文件，内容为对应的域名，在github pages 中,查看域名解析状态<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260306153501252.png"></p>
 <p>同时，我使用的<code>hexo -d</code> 部署博客，为了防止CNAME文件被覆盖，需要再source 目录下新建一个文件<code>CNAME</code>,内容为<code>yyyyyd.com.cn</code></p>
-<p>之后在浏览器中访问<code>yyyyyd.com.cn</code>和<code>www.yyyyyyd.com.cn</code>，就可以看到博客了</p>
+<p>之后在浏览器中访问<code>yyyyyd.com.cn</code>，就可以看到博客了</p>
 
 		</div>
 
@@ -653,7 +648,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 2026-03-06 16:03:44
+                    :</strong> 2026-03-06 17:25:43
             </li>
         
         <li>
@@ -748,7 +743,7 @@ mjx-container[display="true"] + br {
           container.innerHTML = '';
           window.redefineWalineInstance = init({
             el: '#waline',
-            serverURL: 'https://example.example.com',
+            serverURL: 'example.yyyyyd.com.cn',
             path: location.pathname,
             dark: 'body[class~="dark-mode"]',
             reaction: false,
@@ -778,7 +773,7 @@ mjx-container[display="true"] + br {
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
 		<div class="page-title">使用 Hexo Theme Redefine 搭建博客</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85-Hexo-Theme-Redefine"><span class="nav-text">1.安装 Hexo Theme Redefine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E9%85%8D%E7%BD%AE%E5%87%BA%E9%A2%98"><span class="nav-text">2. 初始化和配置出题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages"><span class="nav-text">3. 部署到 GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AELaTeX-%E6%B8%B2%E6%9F%93"><span class="nav-text">4. 配置LaTeX 渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D"><span class="nav-text">5. 配置域名</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85-Hexo-Theme-Redefine"><span class="nav-text">1.安装 Hexo Theme Redefine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-text">2. 初始化和配置主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages"><span class="nav-text">3. 部署到 GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AF%A6%E7%BB%86%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE"><span class="nav-text">4. 详细博客配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D"><span class="nav-text">5. 配置域名</span></a></li></ol>
 
 	</div>
 </div>
@@ -810,7 +805,7 @@ mjx-container[display="true"] + br {
                     </span>
                     
                         <span>
-                            共 474 字
+                            共 482 字
                         </span>
                     
                 </p>
