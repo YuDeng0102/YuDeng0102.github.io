@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2026/03/05/博客搭建/"/>
+    <link rel="canonical" href="http://example.com/2026/03/09/infra学习/cse234/matmul/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -87,16 +87,18 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Hexo Theme Redefine 搭建博客">
-<meta property="og:url" content="http://example.com/2026/03/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:title" content="cse234 w25 lec6 GPU Matmul">
+<meta property="og:url" content="http://example.com/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/index.html">
 <meta property="og:site_name" content="邓氏鱼的Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
-<meta property="article:published_time" content="2026-03-05T03:57:07.000Z">
-<meta property="article:modified_time" content="2026-03-09T06:55:52.207Z">
+<meta property="article:published_time" content="2026-03-09T05:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-09T06:56:45.665Z">
 <meta property="article:author" content="邓氏鱼">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="CSE234">
+<meta property="article:tag" content="cuda">
+<meta property="article:tag" content="matmul">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
     
@@ -110,7 +112,7 @@
     
     <title>
         
-            使用 Hexo Theme Redefine 搭建博客 | 邓氏鱼的Blog
+            cse234 w25 lec6 GPU Matmul | 邓氏鱼的Blog
         
     </title>
 
@@ -532,10 +534,10 @@ mjx-container[display="true"] + br {
 			
 			
 			
-			<img src="https://evan.beee.top/img/redefine-1-final.webp" alt="使用 Hexo Theme Redefine 搭建博客" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			<img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309144910985.png" alt="cse234 w25 lec6 GPU Matmul" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
 			
 			<div class="w-full flex items-center absolute bottom-0 justify-start">
-				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">使用 Hexo Theme Redefine 搭建博客</h1>
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">cse234 w25 lec6 GPU Matmul</h1>
 			</div>
 			
 		</div>
@@ -556,15 +558,15 @@ mjx-container[display="true"] + br {
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2026-03-05 11:57:07</span>
-        <span class="mobile">2026-03-05 11:57:07</span>
+        <span class="desktop">2026-03-09 13:00</span>
+        <span class="mobile">2026-03-09 13:00</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-03-09 14:55:52</span>
-            <span class="mobile">2026-03-09 14:55:52</span>
+            <span class="desktop">2026-03-09 14:56:45</span>
+            <span class="mobile">2026-03-09 14:56:45</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -578,7 +580,7 @@ mjx-container[display="true"] + br {
                     
                         
                         <li>
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>&nbsp;
+                            <a href="/categories/%E5%85%AC%E5%BC%80%E8%AF%BE%E7%AC%94%E8%AE%B0/">公开课笔记</a>&nbsp;
                         </li>
                     
                     
@@ -592,7 +594,15 @@ mjx-container[display="true"] + br {
             <ul>
                 
                     <li>
-                        <a href="/tags/Hexo/">Hexo</a>&nbsp;
+                        <a href="/tags/cuda/">cuda</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/CSE234/">CSE234</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/matmul/">matmul</a>&nbsp;
                     </li>
                 
             </ul>
@@ -602,7 +612,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>407 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>302 字</span>
         </span>
     
     
@@ -626,51 +636,19 @@ mjx-container[display="true"] + br {
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="1-安装-Hexo-Theme-Redefine"><a href="#1-安装-Hexo-Theme-Redefine" class="headerlink" title="1.安装 Hexo Theme Redefine"></a>1.安装 Hexo Theme Redefine</h2><p>安装hexo</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></div>
-
-<p>安装主题,我选的是 <a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs">redefine<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-redefine --save</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="2-初始化和配置主题"><a href="#2-初始化和配置主题" class="headerlink" title="2. 初始化和配置主题"></a>2. 初始化和配置主题</h2><p>找到一个空文件夹,初始化hexo</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></div>
-
-<p>修改<code>_config.yml</code>中的<code>theme</code>为<code>redefine</code>,并新建1个文件<code>_config.redefine.yml</code>，参考<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs/basic">redefine文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置</p>
-<p>运行</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></div>
-
-<p>查看本地部署效果，打开浏览器，访问<code>http://localhost:4000/</code>，结果如下：</p>
-<p><img lazyload="" src="/images/loading.svg" data-src="https://image.yyyyyd.com.cn/images/hexo-blog/20260305142033667.png"></p>
-<h2 id="3-部署到-GitHub-Pages"><a href="#3-部署到-GitHub-Pages" class="headerlink" title="3. 部署到 GitHub Pages"></a>3. 部署到 GitHub Pages</h2><p>在github pages 中新建一个仓库,仓库名必须为<code>username.github.io</code>,其中<code>username</code>为你的github用户名,并在hexo博客根目录下安装<code>hexo-deployer-git</code>插件</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
-
-<p>同时在<code>_config.yml</code>中配置部署信息</p>
-<div class="code-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="comment"># 你的github pages 仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></div>
-
-<p>在github 仓库的deploy settings 中,将<code>Source</code>设置为<code>main branch</code></p>
-<p>在博客目录运行</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
-
-<p>在github pages 中,查看部署状态<br><img lazyload="" src="/images/loading.svg" data-src="https://image.yyyyyd.com.cn/images/hexo-blog/20260305222745799.png"></p>
-<h2 id="4-详细博客配置"><a href="#4-详细博客配置" class="headerlink" title="4. 详细博客配置"></a>4. 详细博客配置</h2><p>我配置了基本信息、Tag、MathJax 渲染LaTeX 公式、评论系统，<br>参考<a class="link" target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/zh/docs/plugins/mathjax">redefine文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h2 id="5-配置域名"><a href="#5-配置域名" class="headerlink" title="5. 配置域名"></a>5. 配置域名</h2><p>自行购买域名，我购买的是<code>yyyyyd.com.cn</code>，DNS服务器使用的Cloudflare,在Cloudflare 中配置域名解析,将<code>yyyyyd.com.cn</code>指向github pages 仓库的IP地址，增加一条CNAME记录</p>
-<table>
-<thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>content</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CNAME</td>
-<td>yyyyyd.com.cn</td>
-<td>username.github.io</td>
-</tr>
-</tbody></table>
-<p>github仓库会产生一个CNAME文件，内容为对应的域名，在github pages 中,查看域名解析状态<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260306153501252.png"></p>
-<p>同时，我使用的<code>hexo -d</code> 部署博客，为了防止CNAME文件被覆盖，需要再source 目录下新建一个文件<code>CNAME</code>,内容为<code>yyyyyd.com.cn</code></p>
-<p>之后在浏览器中访问<code>yyyyyd.com.cn</code>，就可以看到博客了</p>
+			<h2 id="GPU-Matmul"><a href="#GPU-Matmul" class="headerlink" title="GPU Matmul"></a>GPU Matmul</h2><p>这节课从最简单的matmul开始，然后按照tiling,分块，shared memory等优化策略，实现一个高效的matmul算子</p>
+<h3 id="GPU-Matmul-v1"><a href="#GPU-Matmul-v1" class="headerlink" title="GPU Matmul v1"></a>GPU Matmul v1</h3><p>先从最简单的矩阵乘法开始，每个线程计算C矩阵中的一个元素<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309135000897.png"></p>
+<h3 id="GPU-Matmul-v1-5-Thread-Tiling"><a href="#GPU-Matmul-v1-5-Thread-Tiling" class="headerlink" title="GPU Matmul v1.5 Thread Tiling"></a>GPU Matmul v1.5 Thread Tiling</h3><p><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309135214012.png"><br>让每个线程计算一个 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="6.245ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 2760.4 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g><g data-mml-node="mo" transform="translate(991.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1991.4,0)"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g></g></g></svg></mjx-container> 大小的子矩阵的元素，Global Memory的访问次数从 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.251ex" height="1.885ex" role="img" focusable="false" viewBox="0 -833.2 1878.8 833.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="msup" transform="translate(500,0)"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mn" transform="translate(975.3,363) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g></g></g></svg></mjx-container> 减少到了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="10.765ex" height="2.451ex" role="img" focusable="false" viewBox="0 -833.2 4758.2 1083.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mn" transform="translate(975.3,363) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><g data-mml-node="mo" transform="translate(1601,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(2601.2,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3489.2,0)"><g data-mml-node="mo"><path data-c="2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path></g></g><g data-mml-node="mi" transform="translate(3989.2,0)"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g></g></g></svg></mjx-container>,原因是对A矩阵的每行，同时计算了<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.74ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 769 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g></g></g></svg></mjx-container>列B矩阵的元素</p>
+<h3 id="GPU-Matmul-v2-分块"><a href="#GPU-Matmul-v2-分块" class="headerlink" title="GPU Matmul v2 分块"></a>GPU Matmul v2 分块</h3><p><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309135751688.png"><br>原本每个线程计算A的一行需要访问B的V列，这样会导致B的每一列被重复访问了V次，因为A的变化幅度比B慢。可以考虑分块，让对A,B的访问同步进行，这样避免了B的每一列被重复访问。</p>
+<h3 id="GPU-Matmul-v3-SRAM-Tiling"><a href="#GPU-Matmul-v3-SRAM-Tiling" class="headerlink" title="GPU Matmul v3 SRAM Tiling"></a>GPU Matmul v3 SRAM Tiling</h3><p><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309140543526.png"><br>利用shared memory,每个block计算一个 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="5.847ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 2584.4 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mo" transform="translate(903.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1903.4,0)"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g></g></g></svg></mjx-container> 的子矩阵,每个线程计算一个 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="6.245ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 2760.4 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g><g data-mml-node="mo" transform="translate(991.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mi" transform="translate(1991.4,0)"><path data-c="1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></g></g></g></svg></mjx-container> 大小的子矩阵的元素，通过共享内存减少了对Global Memory的访问次数，此外，这里每个block在计算时加载Global Memory是 cooperative fetch的，如下：<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309144910985.png"></p>
+<p>此外，还有一些优化策略</p>
+<ul>
+<li>Global memory continuous read</li>
+<li>Shared memory bank conflict</li>
+<li>Pipelining</li>
+<li>Tensor core</li>
+<li>Lower precision</li>
+</ul>
 
 		</div>
 
@@ -678,18 +656,18 @@ mjx-container[display="true"] + br {
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 使用 Hexo Theme Redefine 搭建博客</li>
+        <li><strong>标题:</strong> cse234 w25 lec6 GPU Matmul</li>
         <li><strong>作者:</strong> 邓氏鱼</li>
         <li><strong>创建于
-                :</strong> 2026-03-05 11:57:07</li>
+                :</strong> 2026-03-09 13:00:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2026-03-09 14:55:52
+                    :</strong> 2026-03-09 14:56:45
             </li>
         
         <li>
-            <strong>链接:</strong> https://yudeng0102.github.io/2026/03/05/博客搭建/
+            <strong>链接:</strong> https://yudeng0102.github.io/2026/03/09/infra学习/cse234/matmul/
         </li>
         <li>
             <strong>
@@ -711,7 +689,15 @@ mjx-container[display="true"] + br {
 		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
 			
 			<li class="tag-item mx-0.5">
-				<a href="/tags/Hexo/">#Hexo</a>&nbsp;
+				<a href="/tags/cuda/">#cuda</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/CSE234/">#CSE234</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/matmul/">#matmul</a>&nbsp;
 			</li>
 			
 		</ul>
@@ -722,18 +708,18 @@ mjx-container[display="true"] + br {
 		
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2026/03/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">cse234 w25 lec6 GPU Matmul</span>
-						<span class="post-nav-item">上一篇</span>
+						<span class="post-nav-title-item truncate max-w-48">使用 Hexo Theme Redefine 搭建博客</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
 					</span>
 				</a>
 			</div>
-			
 			
 		</div>
 		
@@ -809,8 +795,8 @@ mjx-container[display="true"] + br {
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">使用 Hexo Theme Redefine 搭建博客</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85-Hexo-Theme-Redefine"><span class="nav-text">1.安装 Hexo Theme Redefine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-text">2. 初始化和配置主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages"><span class="nav-text">3. 部署到 GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%AF%A6%E7%BB%86%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE"><span class="nav-text">4. 详细博客配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D"><span class="nav-text">5. 配置域名</span></a></li></ol>
+		<div class="page-title">cse234 w25 lec6 GPU Matmul</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#GPU-Matmul"><span class="nav-text">GPU Matmul</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GPU-Matmul-v1"><span class="nav-text">GPU Matmul v1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPU-Matmul-v1-5-Thread-Tiling"><span class="nav-text">GPU Matmul v1.5 Thread Tiling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPU-Matmul-v2-%E5%88%86%E5%9D%97"><span class="nav-text">GPU Matmul v2 分块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPU-Matmul-v3-SRAM-Tiling"><span class="nav-text">GPU Matmul v3 SRAM Tiling</span></a></li></ol></li></ol>
 
 	</div>
 </div>
