@@ -87,14 +87,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cse234 w25 lec6 GPU Matmul">
+<meta property="og:title" content="cse234 w25 lec8-9 Memory &amp; Quantitation">
 <meta property="og:url" content="http://example.com/2026/03/15/infra%E5%AD%A6%E4%B9%A0/cse234/quantitation/index.html">
 <meta property="og:site_name" content="邓氏鱼的Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2026-03-15T05:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-16T01:47:46.304Z">
+<meta property="article:modified_time" content="2026-03-16T01:48:43.059Z">
 <meta property="article:author" content="邓氏鱼">
 <meta property="article:tag" content="CSE234">
 <meta property="article:tag" content="quantitation">
@@ -111,7 +111,7 @@
     
     <title>
         
-            cse234 w25 lec6 GPU Matmul | 邓氏鱼的Blog
+            cse234 w25 lec8-9 Memory &amp; Quantitation | 邓氏鱼的Blog
         
     </title>
 
@@ -533,10 +533,10 @@ mjx-container[display="true"] + br {
 			
 			
 			
-			<img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194900766.png" alt="cse234 w25 lec6 GPU Matmul" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			<img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194900766.png" alt="cse234 w25 lec8-9 Memory &amp; Quantitation" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
 			
 			<div class="w-full flex items-center absolute bottom-0 justify-start">
-				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">cse234 w25 lec6 GPU Matmul</h1>
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">cse234 w25 lec8-9 Memory &amp; Quantitation</h1>
 			</div>
 			
 		</div>
@@ -564,8 +564,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-03-16 09:47:46</span>
-            <span class="mobile">2026-03-16 09:47:46</span>
+            <span class="desktop">2026-03-16 09:48:43</span>
+            <span class="mobile">2026-03-16 09:48:43</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -661,14 +661,14 @@ mjx-container[display="true"] + br {
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> cse234 w25 lec6 GPU Matmul</li>
+        <li><strong>标题:</strong> cse234 w25 lec8-9 Memory &amp; Quantitation</li>
         <li><strong>作者:</strong> 邓氏鱼</li>
         <li><strong>创建于
                 :</strong> 2026-03-15 13:00:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2026-03-16 09:47:46
+                    :</strong> 2026-03-16 09:48:43
             </li>
         
         <li>
@@ -796,7 +796,7 @@ mjx-container[display="true"] + br {
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">cse234 w25 lec6 GPU Matmul</div>
+		<div class="page-title">cse234 w25 lec8-9 Memory &amp; Quantitation</div>
 		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gpu-memory-%E5%8D%A0%E7%94%A8%E5%88%86%E6%9E%90"><span class="nav-text">gpu memory 占用分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-text">模型参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BF%80%E6%B4%BB%E5%80%BC"><span class="nav-text">激活值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E5%8C%96%E5%99%A8%E7%8A%B6%E6%80%81"><span class="nav-text">优化器状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%8F%E5%B0%8F%E5%86%85%E5%AD%98%E7%AD%96%E7%95%A5"><span class="nav-text">减小内存策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%8F%E5%B0%91%E6%BF%80%E6%B4%BB%E5%80%BC%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8"><span class="nav-text">减少激活值内存占用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8F%E5%8C%96"><span class="nav-text">量化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#k-means-%E9%87%8F%E5%8C%96"><span class="nav-text">k-means 量化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E9%87%8F%E5%8C%96"><span class="nav-text">线性量化</span></a></li></ol></li></ol>
 
 	</div>
