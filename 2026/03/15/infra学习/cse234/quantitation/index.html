@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2026/03/15/infra学习/cse234/quantitation/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -86,14 +86,18 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="邓氏鱼的Blog">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cse234 w25 lec6 GPU Matmul">
+<meta property="og:url" content="http://example.com/2026/03/15/infra%E5%AD%A6%E4%B9%A0/cse234/quantitation/index.html">
 <meta property="og:site_name" content="邓氏鱼的Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2026-03-15T05:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-16T01:47:46.304Z">
 <meta property="article:author" content="邓氏鱼">
+<meta property="article:tag" content="CSE234">
+<meta property="article:tag" content="quantitation">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
     
@@ -107,7 +111,7 @@
     
     <title>
         
-            邓氏鱼的Blog - Redefine Your Hexo Journey.
+            cse234 w25 lec6 GPU Matmul | 邓氏鱼的Blog
         
     </title>
 
@@ -299,145 +303,17 @@ mjx-container[display="true"] + br {
 <main class="page-container" id="swup">
 
 	
-	
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
-
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            Theme Redefine
-            
-            
-            
-            
-            
-        </div>
-        
-            
-            <div class="absolute bottom-0.5 flex flex-row justify-between max-w-[1340px] items-center w-full px-8 sm:px-12">
-                <div class="flex p-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 group rounded-full cursor-pointer flex justify-center items-center aspect-square h-full shadow-redefine-flat hover:shadow-redefine-flat-hover transition-shadow" onclick="scrollToMain()" >
-                    <i class="fa-solid fa-arrow-down fa-fw fa-lg group-hover:translate-y-1 transition-transform"></i>
-                </div>
-                <div class="social-contacts px-6 py-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 shadow-redefine-flat rounded-full flex flex-row gap-3 items-center">
-                    
-                        
-                            
-                            
-                            
-                            
-                            
-                            
-                                <span class="social-contact-item">
-                                    <a target="_blank" href="https://github.com/YuDeng0102">
-                                        <i class="fa-brands fa-github fa-fw fa-lg"></i>
-                                    </a>
-                                </span>
-                            
-                        
-                    
-                        
-                    
-                        
-                            
-                            
-                            
-                            
-                            
-                            
-                                
-                                <span class="social-contact-item ">
-                                    <a href="mailto:2272776615@qq.com">
-                                        <i class="fa-solid fa-at fa-fw fa-lg"></i>
-                                    </a>
-                                </span>
-                            
-                        
-                    
-                        
-                    
-                        
-                    
-                    
-                </div>
-            </div>
-        
-    </div>
-    <style>
-        /* Mobile-specific QR code styles */
-        .qr-toggle-item.qr-active .qr-popup {
-            visibility: visible !important;
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-        
-        /* Prevent button from staying in focus/hover state on mobile */
-        @media (hover: none) and (pointer: coarse) {
-            .qr-toggle-item:focus,
-            .qr-toggle-item:hover {
-                background-color: transparent;
-            }
-            
-            .qr-toggle-item .qr-trigger:focus,
-            .qr-toggle-item .qr-trigger:hover {
-                background-color: transparent;
-                color: inherit;
-            }
-            
-            /* Only show active state when explicitly toggled */
-            .qr-popup {
-                visibility: hidden !important;
-                opacity: 0 !important;
-            }
-        }
-    </style>
-</div>
-
-	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
 			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar has-home-banner">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 邓氏鱼的Blog
-                </h1>
+                
             </a>
         </div>
 
@@ -451,7 +327,7 @@ mjx-container[display="true"] + br {
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -543,7 +419,7 @@ mjx-container[display="true"] + br {
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/"
                         >
                             <span>
@@ -648,94 +524,55 @@ mjx-container[display="true"] + br {
 
 		<div class="main-content-body transition-fade-up">
 			
-			<div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar flex justify-center">
-    <img src="https://avatars.githubusercontent.com/u/102908185?v=4">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">邓氏鱼</div>
-    
-        <div class="label">Lv1</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">标签</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
-        <div class="label text-third-text-color text-sm">分类</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
-        <div class="label text-third-text-color text-sm">文章</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-			
 
 			<div class="main-content">
-				<div class="home-content-container">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-                
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194900766.png" alt="cse234 w25 lec6 GPU Matmul" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">cse234 w25 lec6 GPU Matmul</h1>
+			</div>
+			
+		</div>
 
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/2026/03/15/infra%E5%AD%A6%E4%B9%A0/cse234/quantitation/">
-                            <img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194900766.png" alt="cse234 w25 lec6 GPU Matmul" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/2026/03/15/infra%E5%AD%A6%E4%B9%A0/cse234/quantitation/">
-                            cse234 w25 lec6 GPU Matmul
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            gpu memory 占用分析gpu的memory是有限的，在训练大模型时，需要考虑如何在有限的memory中存储模型参数和中间结果,确保峰值memory占用不超过显存容量。gpu的memory开销主要有三个：
-
-模型参数：模型的权重和偏置等参数
-激活值：前向传播中间结果
-优化器状态：优化器在训练过程中需要存储一些状态，如梯度、动量、学习率等
-
-模型参数以175b的gpt3为例，模型参数使用...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Mar 15 2026 13:00:00 GMT+0800">
-                
-                    2026-03-15
-                
-            </span>
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] shrink-0 rounded-medium border border-border-color p-px">
+				<img src="https://avatars.githubusercontent.com/u/102908185?v=4">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">邓氏鱼</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2026-03-15 13:00</span>
+        <span class="mobile">2026-03-15 13:00</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-03-16 09:47:46</span>
+            <span class="mobile">2026-03-16 09:47:46</span>
+            <span class="hover-info">更新</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
             <ul>
                 
                 
@@ -749,214 +586,223 @@ mjx-container[display="true"] + br {
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/CSE234/">CSE234</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/quantitation/">quantitation</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2026/03/15/infra%E5%AD%A6%E4%B9%A0/cse234/quantitation/">阅读全文<span class="seo-reader-text">cse234 w25 lec6 GPU Matmul</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/">
-                            <img src="http://image.yyyyyd.com.cn/images/hexo-blog/20260309144910985.png" alt="cse234 w25 lec6 GPU Matmul" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/">
-                            cse234 w25 lec6 GPU Matmul
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            GPU Matmul这节课从最简单的matmul开始，然后按照tiling,分块，shared memory等优化策略，实现一个高效的matmul算子
-GPU Matmul v1先从最简单的矩阵乘法开始，每个线程计算C矩阵中的一个元素
-GPU Matmul v1.5 Thread Tiling让每个线程计算一个  大小的子矩阵的元素，Global Memory的访问次数从  减少到了 ,原因...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Mar 09 2026 13:00:00 GMT+0800">
-                
-                    2026-03-09
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
             <ul>
                 
+                    <li>
+                        <a href="/tags/CSE234/">CSE234</a>&nbsp;
+                    </li>
                 
-                    
-                        
-                        <li>
-                            <a href="/categories/%E5%85%AC%E5%BC%80%E8%AF%BE%E7%AC%94%E8%AE%B0/">公开课笔记</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li>
+                        | <a href="/tags/quantitation/">quantitation</a>&nbsp;
+                    </li>
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/cuda/">cuda</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/CSE234/">CSE234</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/matmul/">matmul</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/">阅读全文<span class="seo-reader-text">cse234 w25 lec6 GPU Matmul</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>733 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-                </div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="gpu-memory-占用分析"><a href="#gpu-memory-占用分析" class="headerlink" title="gpu memory 占用分析"></a>gpu memory 占用分析</h2><p>gpu的memory是有限的，在训练大模型时，需要考虑如何在有限的memory中存储模型参数和中间结果,确保峰值memory占用不超过显存容量。gpu的memory开销主要有三个：</p>
+<ul>
+<li>模型参数：模型的权重和偏置等参数</li>
+<li>激活值：前向传播中间结果</li>
+<li>优化器状态：优化器在训练过程中需要存储一些状态，如梯度、动量、学习率等</li>
+</ul>
+<h3 id="模型参数"><a href="#模型参数" class="headerlink" title="模型参数"></a>模型参数</h3><p>以175b的gpt3为例，模型参数使用f16存储<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315173531966.png"><br>模型参数占用显存为175B*2=350G</p>
+<h3 id="激活值"><a href="#激活值" class="headerlink" title="激活值"></a>激活值</h3><p>以transformer为例，简化后的激活值大小为 batch_size * seq_len * hidden_size * sizeof(element)<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315173901436.png"><br>一层的transformer的激活值就是78G<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315174057850.png"></p>
+<h3 id="优化器状态"><a href="#优化器状态" class="headerlink" title="优化器状态"></a>优化器状态</h3><p>以adam优化器为例，每个参数需要存储自身的梯度，移动平均数以及移动方差，因此假设原来的参数量为N,优化器存储的显存占用为N*3*sizeof(element)<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315174151187.png"></p>
+<h2 id="减小内存策略"><a href="#减小内存策略" class="headerlink" title="减小内存策略"></a>减小内存策略</h2><p>主要分成单机和并行两类，这篇文章主要关注单机</p>
+<h3 id="减少激活值内存占用"><a href="#减少激活值内存占用" class="headerlink" title="减少激活值内存占用"></a>减少激活值内存占用</h3><ul>
+<li><p>Activation Checkpointing</p>
+<p>activation value只有当需要反向传播时才会被计算，因此可以将部分激活值前向传播后直接释放，反向传播时再计算。如图所示<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315175402785.png"><br>在这个过程中，需要平衡计算成本和显存占用,这种方法的具体名称叫Activation Checkpointing，pytoch就提供了对应的api<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315175619125.png"></p>
+</li>
+<li><p>Gradient Accumulation</p>
+<p>如果显存不足以存储一个batch的激活值，可以设置micro batch，每次只计算一个micro batch的激活值，反向传播时再累加梯度。比如batch size为128，micro batch size为4，那么每次只计算128/4=32个样本的激活值，反向传播时再累加32个样本的梯度。这样用时间换空间。<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194222291.png"></p>
+</li>
+<li><p>cpu swap<br>很简单，就是将一部分数据从显存swap到cpu内存，等需要时再swap回显存。</p>
+</li>
+</ul>
+<h2 id="量化"><a href="#量化" class="headerlink" title="量化"></a>量化</h2><p>量化也是一种减少内存占用的方式，把模型的参数、激活值、梯度等从高精度的浮点数转换成低精度的整数或定点数，从而减少显存占用。这节课介绍了两种经典的量化方法：K-means 量化和线性量化。</p>
+<h3 id="k-means-量化"><a href="#k-means-量化" class="headerlink" title="k-means 量化"></a>k-means 量化</h3><p>将<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.378ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 1051 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D440" d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z"></path></g></g></g></svg></mjx-container>个不同的浮点数分成<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.74ex" height="1.914ex" role="img" focusable="false" viewBox="0 -846 1210.9 846"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(533,363) scale(0.707)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></g></svg></mjx-container>个聚类中心，每个聚类中心仍然用原来的位数表示，原张量中的每个数据变成了一个<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g></g></g></svg></mjx-container>位的整数，表示它所属的聚类中心的索引，同时存储一个聚类中心的表，用于将整数索引映射回浮点数。<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315194900766.png"></p>
+<h3 id="线性量化"><a href="#线性量化" class="headerlink" title="线性量化"></a>线性量化</h3><p>线性量化将浮点数映射到一个固定范围内的整数，例如将浮点数映射到0-255之间的整数。具体来说，线性量化使用以下公式将浮点数<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 451 453"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>映射到整数<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.041ex" height="1.439ex" role="img" focusable="false" viewBox="0 -442 460 636"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g></svg></mjx-container>：<br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315195251083.png"><br><img lazyload="" src="/images/loading.svg" data-src="http://image.yyyyyd.com.cn/images/hexo-blog/20260315195337925.png"></p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> cse234 w25 lec6 GPU Matmul</li>
+        <li><strong>作者:</strong> 邓氏鱼</li>
+        <li><strong>创建于
+                :</strong> 2026-03-15 13:00:00</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2026-03-16 09:47:46
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>链接:</strong> https://yudeng0102.github.io/2026/03/15/infra学习/cse234/quantitation/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
 
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/2026/03/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                            <img src="https://evan.beee.top/img/redefine-1-final.webp" alt="使用 Hexo Theme Redefine 搭建博客" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/2026/03/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                            使用 Hexo Theme Redefine 搭建博客
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            1.安装 Hexo Theme Redefine安装hexo
-1npm install hexo-cli -g
-
-安装主题,我选的是 redefine
-1npm install hexo-theme-redefine --save
-
-2. 初始化和配置主题找到一个空文件夹,初始化hexo
-1hexo init
-
-修改_config.yml中的theme为redefine,并新建1个文件_co...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Mar 05 2026 11:57:07 GMT+0800">
-                
-                    2026-03-05
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Hexo/">Hexo</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2026/03/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">阅读全文<span class="seo-reader-text">使用 Hexo Theme Redefine 搭建博客</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
     </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-	<span class="page-number current">1</span>
 </div>
-  
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/CSE234/">#CSE234</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/quantitation/">#quantitation</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2026/03/09/infra%E5%AD%A6%E4%B9%A0/cse234/matmul/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">cse234 w25 lec6 GPU Matmul</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
     </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.js';
+
+      (function() {
+        const startPath = location.pathname;
+        const startTime = Date.now();
+        const retryDelay = 200;
+        const retryLimit = 5000;
+
+        const runWaline = () => {
+          if (location.pathname !== startPath) {
+            return;
+          }
+
+          const container = document.getElementById('waline');
+          if (!container) {
+            if (Date.now() - startTime < retryLimit) {
+              setTimeout(runWaline, retryDelay);
+            }
+            return;
+          }
+
+          if (window.redefineWalineInstance?.destroy) {
+            window.redefineWalineInstance.destroy();
+          }
+
+          container.innerHTML = '';
+          window.redefineWalineInstance = init({
+            el: '#waline',
+            serverURL: 'example.yyyyyd.com.cn',
+            path: location.pathname,
+            dark: 'body[class~="dark-mode"]',
+            reaction: false,
+            requiredMeta: ['nick', 'mail'],
+            emoji: [],
+                      lang: 'zh-CN',
+          });
+        };
+
+        runWaline();
+      })();
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">cse234 w25 lec6 GPU Matmul</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gpu-memory-%E5%8D%A0%E7%94%A8%E5%88%86%E6%9E%90"><span class="nav-text">gpu memory 占用分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-text">模型参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BF%80%E6%B4%BB%E5%80%BC"><span class="nav-text">激活值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E5%8C%96%E5%99%A8%E7%8A%B6%E6%80%81"><span class="nav-text">优化器状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%8F%E5%B0%8F%E5%86%85%E5%AD%98%E7%AD%96%E7%95%A5"><span class="nav-text">减小内存策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%8F%E5%B0%91%E6%BF%80%E6%B4%BB%E5%80%BC%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8"><span class="nav-text">减少激活值内存占用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8F%E5%8C%96"><span class="nav-text">量化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#k-means-%E9%87%8F%E5%8C%96"><span class="nav-text">k-means 量化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E9%87%8F%E5%8C%96"><span class="nav-text">线性量化</span></a></li></ol></li></ol>
+
+	</div>
+</div>
+	</div>
+	
 </div>
 
 			</div>
@@ -1040,6 +886,26 @@ GPU Matmul v1.5 Thread Tiling让每个线程计算一个  大小的子矩阵的�
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
