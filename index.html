@@ -715,13 +715,14 @@ mjx-container[display="true"] + br {
                         
                             
                             来自vllm官方仓库releases/v0.13.0分支的源码
-核心目标理解引擎层如何承接 Day1 的请求并推进执行：
+主文件：vllm/v1/engine/llm_engine.py1. 引擎构造入口：LLMEngine.from_engine_args()职责：
 
-LLMEngine.add_request() 如何入队请求
-LLMEngine.step() 如何逐步取回输出
-LLM._run_engine() 如何循环收集并返回结果
+将 EngineArgs 转换为 vllm_config
+选择执行器 Executor 类型
+创建 LLMEngine 实例，在llm.py中调用
 
-关键文件与函数主文件：vllm/v1/engine/llm_engine.py1. 引擎构造入...
+
+2. 引擎初始化：LLMEn...
                         
                     </div>
 
