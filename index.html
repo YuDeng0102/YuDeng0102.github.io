@@ -633,7 +633,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -660,7 +660,7 @@ mjx-container[display="true"] + br {
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">邓氏鱼</div>
     
-        <div class="label">Lv1</div>
+        <div class="label">Lv2</div>
     
 </div>
                 <div class="statistics flex justify-around my-2.5">
@@ -673,7 +673,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -688,6 +688,239 @@ mjx-container[display="true"] + br {
 			<div class="main-content">
 				<div class="home-content-container">
     <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/04/09/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day5/">
+                            <img src="https://docs.vllm.ai/en/v0.6.0/_images/vllm-logo-text-light.png" alt="vLLM v0.13.0 源码阅读 - Day 5 实战笔记" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/04/09/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day5/">
+                            vLLM v0.13.0 源码阅读 - Day 5 实战笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Apr 09 2026 20:30:00 GMT+0800">
+                
+                    2026-04-09
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/llm%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/">llm推理加速</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/vllm/">vllm</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/04/09/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day5/">阅读全文<span class="seo-reader-text">vLLM v0.13.0 源码阅读 - Day 5 实战笔记</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/04/05/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day4/">
+                            <img src="https://docs.vllm.ai/en/v0.6.0/_images/vllm-logo-text-light.png" alt="vLLM v0.13.0 源码阅读 - Day 4 实战笔记" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/04/05/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day4/">
+                            vLLM v0.13.0 源码阅读 - Day 4 实战笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            来自vllm官方仓库releases/v0.13.0分支的源码
+KV-Cache回顾在 LLM 推理（尤其是生成阶段 Decode Phase）中，每一次我们都是基于前  个词，去预测第  个词。
+标准 Self-Attention 的核心公式是： 
+第一种情况：不使用 KV Cache（朴素推理）假设我们现在已经生成了序列 。 为了预测下一个词，大模型需要把整个长序列  重新传给 Atte...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Apr 05 2026 22:30:00 GMT+0800">
+                
+                    2026-04-05
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/llm%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/">llm推理加速</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/vllm/">vllm</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/04/05/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day4/">阅读全文<span class="seo-reader-text">vLLM v0.13.0 源码阅读 - Day 4 实战笔记</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/04/04/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day3/">
+                            <img src="https://docs.vllm.ai/en/v0.6.0/_images/vllm-logo-text-light.png" alt="vLLM v0.13.0 源码阅读 - Day 3 实战笔记" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/04/04/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day3/">
+                            vLLM v0.13.0 源码阅读 - Day 3 实战笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            来自vllm官方仓库releases/v0.13.0分支的源码
+SchedulerSchedule是在迭代级别（iteration level）做出的。每一个调度步骤都对应模型的一次前向推断（forward pass）。因此，该方法会被引擎中的内部循环（busy loop）不断地反复调用。
+本质上，调度器会生成一个 {req_id: num_tokens} 的字典，用来指定在当前的调度步骤中...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Apr 04 2026 16:30:00 GMT+0800">
+                
+                    2026-04-04
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/llm%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/">llm推理加速</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/vllm/">vllm</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/04/04/infra%E5%AD%A6%E4%B9%A0/vllm/vllm%E6%BA%90%E7%A0%81day3/">阅读全文<span class="seo-reader-text">vLLM v0.13.0 源码阅读 - Day 3 实战笔记</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
         
             <li class="home-article-item">
 
@@ -1146,11 +1379,11 @@ GPU Matmul v1.5 Thread Tiling让每个线程计算一个  大小的子矩阵的�
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 5 篇文章
+                        共撰写了 8 篇文章
                     </span>
                     
                         <span>
-                            共 2.8k 字
+                            共 7.1k 字
                         </span>
                     
                 </p>
